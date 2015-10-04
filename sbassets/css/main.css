@@ -1,17 +1,10 @@
 
-body {
-    background:url(http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-42713.jpg) fixed;
-}
-h1 {
-    color:white;
-}
-
 /* Toggle Styles */
 
 #menu-toggle {
     position: absolute;
-    top: 0%;
-    left: 0%;
+    top: 1%;
+    left: 1%;
     z-index: 1000;
     padding:5px 5px;
     opacity:.5;
@@ -53,7 +46,7 @@ h1 {
     height: 100%;
     margin-left: -175px;
     overflow-y: auto;
-    background: #000;
+    background: rgba(0,0,0,0.8);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -126,8 +119,8 @@ h1 {
 @media(min-width:768px) {
     #menu-toggle {
         position: absolute;
-        top: 0%;
-        left: -10%;
+        top: 4%;
+        left: -4%;
         z-index: 1000;
         padding:5px 20px;
         opacity:1;
@@ -139,7 +132,7 @@ h1 {
         transition: all 0.5s ease;
     }
     #menu-toggle.clicked {
-        left:0%;
+        left:1%;
         padding:5px 5px;
         opacity:.5;
         -webkit-transition: all 0.5s ease;
@@ -172,5 +165,28 @@ h1 {
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;
+    }
+}
+
+/* Content Styles */
+
+
+body {
+    background:url(http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-42713.jpg) fixed;
+}
+h1 {
+    color:white;font-size:10em; 
+}
+
+div.call {
+    margin-top:10%;
+}
+div.well {
+    background:rgba(255,255,255,0.3);
+}
+
+@media(max-width:768px) {
+    h1 {
+        color:white;font-size:5em; 
     }
 }
